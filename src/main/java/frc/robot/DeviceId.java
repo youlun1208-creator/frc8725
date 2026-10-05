@@ -7,31 +7,21 @@ public final class DeviceId {
         public static final int FRONT_RIGHT = 3;
         public static final int BACK_RIGHT = 4;
     }
-
-    // 加上 static，並確保名稱正確
-    public static final class Conveyer {
-        public static final int CONVEYER = 5;
+    public static final class ConveyorMotor {
+        public static final int CONVEYOR = 5;
     }
 
-    public static final class Feeder {
-        public static final int FEEDER = 6; // 修正名稱
+    public static final class IntakeMotor {
+        public static final int ROLLER_MAIN = 6;
+        public static final int ROLLER_FOLLOWER = 7;
+        public static final int LIFTER = 8;
     }
 
-    public static final class Flywheel {
-        public static final int FLYWHEEL = 7; // 修正名稱
-    }
-
-    public static final class Hood {
-        public static final int HOOD = 8; // 修正名稱
-    }
-
-    public static final class Shooter {
-        public static final int SHOOTER = 9; // 修正名稱
-    }
-
-    public static final class Intake {
-        public static final int LIFTER = 10;
-        public static final int ROLLER = 11;
+    public static final class ShooterMotor {
+        public static final int FEEDER = 9;
+        public static final int HOOD = 10;
+        public static final int FLYWHEEL_MAIN = 11;
+        public static final int FLYWHEEL_FOLLOWER = 12;
     }
 
     private DeviceId() {}

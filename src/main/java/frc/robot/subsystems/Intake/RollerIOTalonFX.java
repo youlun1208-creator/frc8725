@@ -13,13 +13,13 @@ public class RollerIOTalonFX implements RollerIO {
 
         TalonFXConfiguration config = new TalonFXConfiguration();
         
-        // 1. 設定電流限制：防止吸取物件或卡住時燒毀馬達（供給電流 30A）
+
         CurrentLimitsConfigs currentLimits = new CurrentLimitsConfigs();
         currentLimits.SupplyCurrentLimit = 30.0;
         currentLimits.SupplyCurrentLimitEnable = true;
         config.CurrentLimits = currentLimits;
         
-        // 2. 設定中立模式為滑行（Coast）：停止時讓滾輪自然滑行，減少機構衝擊
+
         config.MotorOutput.NeutralMode = NeutralModeValue.Coast;
 
         motor.getConfigurator().apply(config);
